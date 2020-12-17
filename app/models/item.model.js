@@ -2,7 +2,7 @@ module.exports = mongoose => {
     const Product = require("./product.model.js")(mongoose);
     let schema = mongoose.Schema(
         {
-            product: [Product],
+            product: Product,
             quantity: Number
         },
     );
